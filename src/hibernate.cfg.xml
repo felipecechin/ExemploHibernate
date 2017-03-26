@@ -14,7 +14,7 @@
         <property name="connection.password"></property>
 
         <!-- SQL dialect -->
-        <property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
@@ -32,7 +32,10 @@
 		<mapping class="curso.hibernate.heranca.VeiculoHeranca"/>
 		<mapping class="curso.hibernate.heranca.VeiculoQuatroRodas"/>
 		<mapping class="curso.hibernate.heranca.VeiculoDuasRodas"/> -->
-		<mapping class="curso.hibernate.modelo.Usuario"/>
+		
+		
+		<mapping resource="Usuario.hbm.xml"/>
+		<mapping resource="Sala.hbm.xml"/>
     </session-factory>
 
 </hibernate-configuration>

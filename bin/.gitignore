@@ -1,2 +1,4 @@
 /curso/
 /hibernate.cfg.xml
+/Usuario.hbm.xml
+/Sala.hbm.xml
